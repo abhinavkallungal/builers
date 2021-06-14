@@ -1,0 +1,132 @@
+:root{
+    --primary-color:#2289ff;
+    --secondary-color:#314862;
+    --acent-color:#193f6a;
+    --font-poppins:'poppins',serif;
+}
+
+.BG-primary{
+    background-color: var(--primary-color);
+}
+.color-primary{
+    color: var(--primary-color);
+}
+.BG-secondary{
+    background-color: var(--secondary-color);
+}
+.color-secondary{
+    color: var(--secondary-color);
+}
+.BG-acent{
+    background-color: var(--acent-color);
+}
+.color-acent{
+    color: var(--acent-color);
+}
+
+.btn-theme{
+    padding: 10px 20px ;
+    box-shadow: none;
+    margin: auto;
+    border-radius: 30px  0  30px 30px ;
+    background-color: var(--primary-color);
+    font-family: var(--font-poppins);
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: .5s ease;
+    &:hover{
+        background-color: var(--secondary-color);
+        color: #ffffff;
+    }
+
+}
+
+.header{
+    .navbar{
+        box-shadow: none;
+
+
+        .navbar-brand{
+            font-family: var(--font-poppins);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--secondary-color);
+            span{
+                color: var(--primary-color);
+            }
+        }
+
+        .navbar-toggler{
+            color: #000;
+        }
+        .navbar-nav{
+            margin-left: auto;
+            .nav-item{
+                margin: 0 10px;
+                padding: 0;
+                .nav-link{
+                    font-family: var(--font-poppins);
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: var(--secondary-color);
+                    transition: .5s ease;
+
+                    &:hover{
+                        color: var(--primary-color);
+                    }
+                }
+                .active{
+                    font-weight: 500;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+
+.hero-banner{
+    width: 100%;
+    padding: 80px 0;
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+    .text-content{
+        margin-left: auto;
+        
+            .round-btn{
+               margin: 0;
+               font-family: var(--font-poppins);
+               outline: none;
+               border: none;
+               background-color: var(--secondary-color);
+               color: #fff;
+               border-radius: 100%;
+               padding: 10px 16px  ;
+               i{
+                font-size: 18px;
+                font-weight: 500;
+               }
+               &:hover{
+                   background-color: var(--acent-color);
+               }
+
+            }
+        
+    }
+    .image-content{
+        margin-right: auto;
+        .image{
+           
+            overflow: hidden;
+            border-radius: 80px 80px 0px 80px;
+            
+        }
+    }
+
+}
+@media only screen and (max-width:767px){
+    .hero-banner .image-content  {
+        margin-top: 50px;
+      }
+
+}
