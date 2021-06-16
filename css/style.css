@@ -117,7 +117,6 @@
 }
 
 .hero-banner {
-  border: 1px solid green;
   width: 100%;
   padding: 80px 0;
   color: var(--secondary-color);
@@ -158,7 +157,6 @@
 }
 
 .search-section {
-  border: 1px solid red;
   margin: 2rem 0;
 }
 
@@ -193,7 +191,6 @@
 }
 
 .about-section {
-  border: 1px solid blue;
   font-family: var(--font-poppins);
   background-color: #eee;
   padding: 5rem 0px;
@@ -220,7 +217,6 @@
 }
 
 .service-section {
-  border: 1px solid green;
   padding: 3rem 0;
   font-family: var(--font-poppins);
 }
@@ -253,9 +249,9 @@
 }
 
 .properties-section {
-  border: 1px solid red;
   font-family: var(--font-poppins);
   background-color: #eee;
+  padding: 50px;
 }
 
 .properties-section .color-primary {
@@ -276,7 +272,7 @@
 
 .properties-section #property-slider {
   width: 100%;
-  height: 500px;
+  height: 350px;
 }
 
 .properties-section #property-slider .swiper-container {
@@ -310,6 +306,38 @@
   margin: 1rem;
 }
 
+.work-section {
+  padding: 3rem 0;
+  font-family: var(--font-poppins);
+}
+
+.work-section h6 {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.work-section .work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work-section .work-list .work {
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem 1rem;
+  border-radius: 30px 30px 0px 30px;
+  color: var(--secondary-color);
+}
+
+.work-section .work-list .work i {
+  font-size: 24px;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 100%;
+  color: var(--primary-color);
+}
+
 @media only screen and (max-width: 767px) {
   .hero-banner .image-content {
     margin-top: 50px;
@@ -325,6 +353,12 @@
     margin-top: 50px;
   }
   .service-section .service-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work-section .work-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
